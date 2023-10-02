@@ -34,18 +34,7 @@ const NavBar = () => {
               </HStack>
             </Box>
             <Flex w="50%"></Flex>
-            <Flex alignItems={'center'}>
-              <Box>
-                <Image
-                  rounded={'full'}
-                  h="auto"
-                  w={[100, 200, 300]}
-                  src={
-                    'https://avatars.githubusercontent.com/u/130946778?v=4'
-                  }
-                />
-              </Box>
-            </Flex>
+            <Flex alignItems={'center'}></Flex>
           </Flex>
         </Box>
       </motion.div>

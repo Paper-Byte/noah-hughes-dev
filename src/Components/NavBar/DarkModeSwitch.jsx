@@ -3,17 +3,6 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 export const MotionBox = motion(Box);
-const Circle = (props) => {
-  return (
-    <motion.circle
-      id="Oval"
-      r="17.5px"
-      initial={false}
-      fill="#333"
-      {...props}
-    />
-  );
-};
 
 const DarkModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,7 +13,6 @@ const DarkModeSwitch = () => {
       transition: {
         when: 'beforeChildren',
         staggerChildren: 0.1,
-        // delay: 0,
       },
       backgroundColor: '#6C757D',
     },
