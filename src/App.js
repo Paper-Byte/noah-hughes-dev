@@ -1,7 +1,8 @@
 import React from 'react';
 import IntroVideo from './Components/IntroVideo';
 import AnimatedCursor from 'react-animated-cursor';
-import NavBar from './NavBar/NavBarBody';
+import NavBar from './Components/NavBar/NavBarBody';
+import BannerBody from './Components/Banner/BannerBody';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       />
       <IntroVideo />
       <NavBar />
+      <BannerBody />
     </>
   );
 }
