@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import IntroVideo from './Components/IntroVideo';
+import AnimatedCursor from 'react-animated-cursor';
+import NavBar from './NavBar/NavBarBody';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={8}
+        color="98, 98, 106"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          'a',
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          'label[for]',
+          'select',
+          'textarea',
+          'button',
+          '.link',
+        ]}
+      />
+      <IntroVideo />
+      <NavBar />
+    </>
   );
 }
 
