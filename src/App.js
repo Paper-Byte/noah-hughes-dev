@@ -3,6 +3,7 @@ import IntroVideo from './Components/IntroVideo';
 import AnimatedCursor from 'react-animated-cursor';
 import NavBar from './Components/NavBar/NavBarBody';
 import BannerBody from './Components/Banner/BannerBody';
+import TickerBody from './Components/Ticker/TickerBody';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <IntroVideo />
       <NavBar />
       <BannerBody />
+      <TickerBody />
     </>
   );
 }
