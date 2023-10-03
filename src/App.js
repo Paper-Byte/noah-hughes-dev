@@ -6,7 +6,7 @@ import BannerBody from './Components/Banner/BannerBody';
 import Carousel from './Components/Carousel';
 import { useColorModeValue } from '@chakra-ui/react';
 
-function App() {
+const App = () => {
   const pageColor = useColorModeValue('brand.50');
   return (
     <div color={pageColor}>
@@ -37,6 +37,6 @@ function App() {
       <Carousel />
     </div>
   );
-}
+};
 
 export default App;

@@ -4,6 +4,7 @@ import {
   Heading,
   Image,
   useColorModeValue,
+  HStack,
 } from '@chakra-ui/react';
 import BADGES from '../data/Badges';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -23,8 +24,16 @@ const Carousel = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 3.3 }}
       >
-        <Box textAlign={'center'} w={'full'}>
-          <Heading>My Ever Growing Toolbox</Heading>
+        <Box textAlign={'center'} w={'full'} whiteSpace={'nowrap'}>
+          <Heading display={'inline'}>
+            My Ever Growing Toolbox
+          </Heading>
+          <Image
+            src="https://i.giphy.com/media/bCBZaPWhl515tcyVjo/giphy.webp"
+            alt="tool gif"
+            w={[10, 20, 50]}
+            display={'inline'}
+          />
         </Box>
         <div className="embla">
           <div className="embla__viewport" ref={emblaRef}>
