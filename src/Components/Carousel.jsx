@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Image,
-  useColorModeValue,
-  HStack,
-} from '@chakra-ui/react';
+import { Box, Heading, Image } from '@chakra-ui/react';
 import BADGES from '../data/Badges';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 
 const Carousel = () => {
-  const cardColor = useColorModeValue('brand.200', 'brand.500');
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true },
     [Autoplay({ delay: 1000 })]
@@ -35,15 +28,14 @@ const Carousel = () => {
             display={'inline'}
           />
         </Box>
-        <div className="embla">
-          <div className="embla__viewport" ref={emblaRef}>
-            <div className="embla__container">
+        <Box className="embla" w={'full'} overflow={'hidden'}>
+          <Box className="embla__viewport" ref={emblaRef}>
+            <Box className="embla__container">
               {BADGES.map((badge) => (
                 <Box
                   className="embla__slide"
                   key={badge.name}
                   rounded={'md'}
-                  color={cardColor}
                 >
                   <Image
                     className="embla__slide__img"
@@ -52,9 +44,9 @@ const Carousel = () => {
                   />
                 </Box>
               ))}
-            </div>
-          </div>
-        </div>
+            </Box>
+          </Box>
+        </Box>
       </motion.div>
     </>
   );

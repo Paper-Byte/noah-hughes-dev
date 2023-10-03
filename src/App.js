@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar/NavBarBody';
 import BannerBody from './Components/Banner/BannerBody';
 import Carousel from './Components/Carousel';
 import { useColorModeValue } from '@chakra-ui/react';
+import ProjectsContainer from './Components/Projects/ProjectsContainer';
 
 const App = () => {
   const pageColor = useColorModeValue('brand.50');
@@ -35,6 +36,7 @@ const App = () => {
       <NavBar />
       <BannerBody />
       <Carousel />
+      <ProjectsContainer />
     </div>
   );
 };
