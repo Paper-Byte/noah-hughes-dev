@@ -6,7 +6,7 @@ export default extendTheme({
     body: `'Work Sans Variable', sans-serif`,
   },
   config: {
-    initialColorMode: 'light',
+    initialColorMode: 'dark',
     useSystemColorMode: false,
   },
   colors: {

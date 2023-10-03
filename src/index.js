@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react';
 import styling from './styling/styling';
+import './embla.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

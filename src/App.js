@@ -3,11 +3,13 @@ import IntroVideo from './Components/IntroVideo';
 import AnimatedCursor from 'react-animated-cursor';
 import NavBar from './Components/NavBar/NavBarBody';
 import BannerBody from './Components/Banner/BannerBody';
-import TickerBody from './Components/Ticker/TickerBody';
+import Carousel from './Components/Carousel';
+import { useColorModeValue } from '@chakra-ui/react';
 
 function App() {
+  const pageColor = useColorModeValue('brand.50');
   return (
-    <>
+    <div color={pageColor}>
       <AnimatedCursor
         innerSize={12}
         outerSize={8}
@@ -32,8 +34,8 @@ function App() {
       <IntroVideo />
       <NavBar />
       <BannerBody />
-      <TickerBody />
-    </>
+      <Carousel />
+    </div>
   );
 }
 

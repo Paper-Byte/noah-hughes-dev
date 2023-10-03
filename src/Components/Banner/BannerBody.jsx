@@ -8,13 +8,13 @@ import {
   Heading,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const BannerBody = () => {
   const fontColorHeading = useColorModeValue('brand.50', 'brand.700');
   const gradientColor = useColorModeValue(
-    'linear(to-r, brand.200, brand.800)',
-    'linear(to-r, brand.800, brand.100'
+    'linear(to-r, brand.200, brand.700)',
+    'linear(to-r, brand.500, brand.100)'
   );
   const backgroundColor = useColorModeValue('brand.50', 'brand.800');
   return (
@@ -68,7 +68,7 @@ const BannerBody = () => {
                 color={fontColorHeading}
                 zIndex={2}
               >
-                Full Stack Software Engineer
+                Front End Software Engineer
               </Heading>
             </motion.div>
             <motion.div
