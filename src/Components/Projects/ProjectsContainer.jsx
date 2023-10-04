@@ -91,7 +91,7 @@ const ProjectsContainer = () => {
             h={'100%'}
             w={'full'}
             src={
-              process.env.PUBLIC_URL + '/projects/lorem-ipsum-cms.png'
+              process.env.PUBLIC_URL + '/projects/pokemon-team.png'
             }
           />
         </Box>
