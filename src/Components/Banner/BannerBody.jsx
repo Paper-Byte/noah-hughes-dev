@@ -88,11 +88,12 @@ const BannerBody = () => {
                 })}
                 zIndex={1}
               >
-                Hey, there! I am a Full Stack Engineer based out of
+                Hey, there! I am a Front End Engineer based out of
                 Virginia, United States. I have extensive knowledge of
-                may front end and back end languages and technologies.
-                Particularly well versed in Javascript, CSS, Python,
-                and different SQL tools.
+                may front end languages and technologies.
+                Intermiediate level mastery of back end utilities, as
+                well. Particularly well versed in Javascript, CSS,
+                Python, and different SQL tools.
               </Text>
             </motion.div>
           </Stack>
