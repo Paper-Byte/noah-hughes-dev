@@ -56,7 +56,7 @@ const ProjectsContainer = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex wrap={'wrap'}>
+      <Flex wrap={'wrap-reverse'}>
         <Box
           w={['full', 'full', 'full', '48%']}
           textAlign={'center'}
