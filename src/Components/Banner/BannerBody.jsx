@@ -46,7 +46,7 @@ const BannerBody = () => {
               size="4xl"
               fontWeight={900}
               color={fontColorHeading}
-              textShadow={'xl'}
+              textShadow={'2px 2px 3px grey'}
               zIndex={1}
             >
               <motion.div
@@ -67,6 +67,7 @@ const BannerBody = () => {
                 fontWeight={500}
                 color={fontColorHeading}
                 zIndex={2}
+                textShadow={'2px 2px 3px grey'}
               >
                 Front End Software Engineer
               </Heading>
@@ -77,6 +78,7 @@ const BannerBody = () => {
               transition={{ duration: 1, delay: 3.1 }}
             >
               <Text
+                textShadow={'2px 2px 3px grey'}
                 color={fontColorHeading}
                 fontWeight={100}
                 lineHeight={1.2}

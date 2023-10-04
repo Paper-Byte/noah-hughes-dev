@@ -18,7 +18,7 @@ const Carousel = () => {
         transition={{ duration: 1, delay: 3.3 }}
       >
         <Box textAlign={'center'} w={'full'} whiteSpace={'nowrap'}>
-          <Heading display={'inline'}>
+          <Heading display={'inline'} textShadow={'2px 2px 3px grey'}>
             My Ever Growing Toolbox
           </Heading>
           <Image
