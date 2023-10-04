@@ -5,6 +5,7 @@ import {
   Image,
   useColorModeValue,
   Flex,
+  Heading,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
@@ -16,6 +17,33 @@ const ProjectsContainer = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 3.1 }}
     >
+      <Box
+        textAlign={'center'}
+        w={'full'}
+        whiteSpace={'nowrap'}
+        paddingTop={'5%'}
+        paddingBottom={'2%'}
+      >
+        <Image
+          src="https://i.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.webp"
+          alt="tool gif"
+          w={[10, 41, 50]}
+          display={'inline'}
+        />
+        <Heading
+          display={'inline'}
+          textShadow={'2px 2px 3px grey'}
+          textDecoration={'underline'}
+        >
+          Some Of My Projects
+        </Heading>
+        <Image
+          src="https://i.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.webp"
+          alt="tool gif"
+          w={[10, 41, 50]}
+          display={'inline'}
+        />
+      </Box>
       <Flex wrap={'wrap'}>
         <Box
           h={[200, 260, 370, 375]}
@@ -26,8 +54,10 @@ const ProjectsContainer = () => {
           shadow={'2xl'}
           display={'inline-block'}
           margin={4}
+          boxShadow={'-14px -12px 31px 2px rgba(137, 137, 137, 0.76)'}
         >
           <Image
+            _hover={{ scale: 5 }}
             h={'100%'}
             w={'full'}
             src={
@@ -46,7 +76,7 @@ const ProjectsContainer = () => {
           <Text
             fontSize={'2xl'}
             fontStyle={'italic'}
-            fontWeight={'700'}
+            fontWeight={'400'}
             textShadow={'2px 2px 3px grey'}
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -68,7 +98,7 @@ const ProjectsContainer = () => {
           <Text
             fontSize={'2xl'}
             fontStyle={'italic'}
-            fontWeight={'700'}
+            fontWeight={'400'}
             textShadow={'2px 2px 3px grey'}
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -88,6 +118,9 @@ const ProjectsContainer = () => {
           margin={4}
         >
           <Image
+            boxShadow={
+              '14px -12px 31px 2px rgba(137, 137, 137, 0.76)'
+            }
             h={'100%'}
             w={'full'}
             src={

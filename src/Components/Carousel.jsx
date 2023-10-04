@@ -17,14 +17,29 @@ const Carousel = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 3.3 }}
       >
-        <Box textAlign={'center'} w={'full'} whiteSpace={'nowrap'}>
-          <Heading display={'inline'} textShadow={'2px 2px 3px grey'}>
+        <Box
+          textAlign={'center'}
+          w={'full'}
+          whiteSpace={'nowrap'}
+          paddingTop={'3%'}
+        >
+          <Image
+            src="https://i.giphy.com/media/bCBZaPWhl515tcyVjo/giphy.webp"
+            alt="tool gif"
+            w={[10, 41, 50]}
+            display={'inline'}
+          />
+          <Heading
+            display={'inline'}
+            textShadow={'2px 2px 3px grey'}
+            textDecoration={'underline'}
+          >
             My Ever Growing Toolbox
           </Heading>
           <Image
             src="https://i.giphy.com/media/bCBZaPWhl515tcyVjo/giphy.webp"
             alt="tool gif"
-            w={[10, 20, 50]}
+            w={[10, 41, 50]}
             display={'inline'}
           />
         </Box>
